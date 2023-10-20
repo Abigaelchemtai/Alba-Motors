@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fixed navigation bar</title>
+
+  <!--link with the stylesheet-->
+  <link rel="stylesheet" href="css/navigation1.css">
+  <!--insert bootstrap link-->
+  <!-- Add these links in your HTML file -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<!--font awesome links-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+
+
+</head>
+<body>
+<!--NAVIGATION BAR-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="img/logo.avif" alt="logo" style="height: 50px; width: 80px"> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Contact</a>
+        </li>
+
+      </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-but">
+            <a class="btn btn-outline-light" href="#">SignUp</a>
+          </li>
+          <li class="nav-but">
+            <a class="btn btn-outline-light" href="#">LogIn</a>
+         </li>
+        </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!--Carousel with 3D Animations--->
+
+<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <img src="img/cars1.avif" class="d-block w-100" alt="...">
+      <div class="carousel-caption ">
+        <h5>Cars</h5>
+        <p>We have different models of cars</p>
+        <p><a href="#" class="btn-warning mt3">Learn More</a> </p>
+      </div>
+    </div>
+     <div class="carousel-item">
+      <img src="img/Toyota.avif" class="d-block w-100" alt="...">
+      <div class="carousel-caption ">
+        <h5>Toyota</h5>
+        <p>Toyota brand is available</p>
+        <p><a href="#" class="btn-warning mt3">Learn More</a> </p>
+      </div>
+    </div>
+    <div class="carousel-item active">
+      <img src="img/Jeep1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption ">
+        <h5>Jeep</h5>
+        <p>Jeep latest models are available</p>
+        <p><a href="#" class="btn-warning mt3">Learn More</a> </p>
+        </div>
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+<!----About Section---->
+<section id="about" class="about-section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-4 mt-4">
+                <div class="about-img " >
+                    <img src="img/cars1.avif" alt="sport" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-8 col-12 ps-lg-5 mt-md-5">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Alba Motors is a reputable automotive dealership dedicated to providing high-quality vehicles and exceptional service to its customers.
+                    Established with a passion for automobiles,
+                    the company has garnered a strong presence in the automotive industry for delivering top-notch cars and reliable services. </p>
+                    <a href="#" class="btn btn-warning">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!--Services Section-->
+
+<section id="services" class="services section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5"> <!-- Fixed spacing issue here -->
+                    <h2>Our Services</h2>
+                    <p>Vehicle Sales, Financing Solutions, Trade-Ins, Expert Maintenance, Quality Repairs</p> <!-- Removed extra space after comma -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card text-white text-center bg-dark py-2">
+                    <div class="card-body">
+                        <img src="img/mercedes.avif" alt="mercedes" width="250" height="170">
+                        <h3 class="card-title">Mercedes</h3>
+                        <p class="lead">Synonymous with opulence and engineering excellence, Mercedes-Benz has set the gold standard in the automotive world for over a century. From the iconic three-pointed star emblem to the cutting-edge technology integrated into every model, Mercedes vehicles exude luxury, performance, and innovation.</p>
+                        <button class="btn btn-warning text-dark">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card text-white text-center bg-dark py-2">
+                    <div class="card-body">
+                        <img src="img/benz1.avif" alt="" width="250" height="170">
+                        <h3 class="card-title">Benz</h3>
+                        <p class="lead">The name Benz is synonymous with innovation. As one of the pioneers of the modern automobile, the legacy of Karl Benz lives on in every meticulously crafted vehicle bearing the name. Each Benz car is a testament to precision engineering and a commitment to pushing the boundaries of what's possible on the road.</p>
+                        <button class="btn btn-warning text-dark">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card text-white text-center bg-dark py-2">
+                    <div class="card-body">
+                        <img src="img/Toyota.avif" alt="toyota" width="250" height="170">
+                        <h3 class="card-title">Toyota</h3>
+                        <p class="lead">Toyota has earned its reputation as a global leader in automotive reliability and innovation. With a history spanning generations, Toyota vehicles are known for their steadfast performance, fuel efficiency, and unwavering commitment to safety. From family-friendly SUVs to efficient hybrids, Toyota offers a diverse range of vehicles to meet every lifestyle.</p>
+                        <button class="btn btn-warning text-dark">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--portfolio section-->
+  <section id="portfolio" class="portfolio section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Our Blog</h2>
+                    <p>At Alba Motors, we believe in providing our valued customers with more than just vehicles.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="card text-center bg-white pb-2">
+                    <div class="card-body text-dark">
+                        <div class="img-area mb-4">
+                            <img src="img/sport2.avif" alt="portfolio" class="img-fluid">
+                            <h3 class="card-title">Thrill-Seekers, Meet Your Match</h3>
+                            <p>For the adrenaline junkies and speed enthusiast ignite your passion for high-performance driving. Whether it's the raw power of a muscle
+                              car or the precision of a European sports coupe,
+                              we have a selection that caters to those who demand exhilaration at every turn.</p>
+                            <button class="btn btn-warning text-dark">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <div class="col-12 col-md-12 col-lg-4">
+                <div class="card text-center bg-white pb-2">
+                    <div class="card-body text-dark">
+                        <div class="img-area mb-4">
+                            <img src="img/jeep2.avif" alt="portfolio" class="img-fluid">
+                            <h3 class="card-title">Unleash Adventure with Jeep</h3>
+                            <p>Known for their off-road prowess and adventurous spirit, Jeeps are more than just vehicles;
+                              they're a lifestyle. Whether you're conquering rocky terrains or cruising city streets,
+                              a Jeep is your reliable companion on every journey.</p>
+                            <button class="btn btn-warning text-dark">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="card text-center bg-white pb-2">
+                    <div class="card-body text-dark">
+                        <div class="img-area mb-4">
+                            <img src="img/benz1.avif" alt="portfolio" class="img-fluid">
+                            <h3 class="card-title"> Elevate Your Drive with Mercedes-Benz</h3>
+                            <p> Mercedes has set the gold standard in the automotive world for over a century.
+                              From the iconic three-pointed star emblem to the cutting-edge technology
+                              integrated into every model, Mercedes vehicles exude luxury, performance, and innovation.</p>
+                            <button class="btn btn-warning text-dark">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Team section-->
+<section id="team" class="team section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Our Team</h2>
+                    <p>Meet the dedicated individuals behind Alba Motors</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- All team members in a single row -->
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="img/men3.avif" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Jack Stawn</h3>
+                        <p class="card-text">Outstanding service! Found the perfect car hassle-free. Highly recommended!</p>
+                        <p class="socials">
+                            <i class="fab fa-twitter text-dark mx-1"></i>
+                            <i class="fab fa-facebook text-dark mx-1"></i>
+                            <i class="fab fa-linkedin text-dark mx-1"></i>
+                            <i class="fab fa-instagram text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="img/men2.avif" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Job Kiprop</h3>
+                        <p class="card-text">Toyota fan for life! Reliable, efficient, and safe. No complaints. Affordable price too!!</p>
+                        <p class="socials">
+                            <i class="fab fa-twitter text-dark mx-1"></i>
+                            <i class="fab fa-facebook text-dark mx-1"></i>
+                            <i class="fab fa-linkedin text-dark mx-1"></i>
+                            <i class="fab fa-instagram text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="img/lady2.avif" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Roselyne Chebet</h3>
+                        <p class="card-text">Exceptional maintenance! Kept my car running smoothly. Will be back</p>
+                        <p class="socials">
+                            <i class="fab fa-twitter text-dark mx-1"></i>
+                            <i class="fab fa-facebook text-dark mx-1"></i>
+                            <i class="fab fa-linkedin text-dark mx-1"></i>
+                            <i class="fab fa-instagram text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="img/lady1.avif" alt="" class="img-fluid rounded-circle">
+                        <h3 class="card-title py-2">Jane Nyawira</h3>
+                        <p class="card-text">Impressed with the range of vehicles. Seamless buying experience, top-notch</p>
+                        <p class="socials">
+                            <i class="fab fa-twitter text-dark mx-1"></i>
+                            <i class="fab fa-facebook text-dark mx-1"></i>
+                            <i class="fab fa-linkedin text-dark mx-1"></i>
+                            <i class="fab fa-instagram text-dark mx-1"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Contact Section --->
+<<section id="contact" class="contact section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-header text-center pb-5">
+                    <h2>Contact Us</h2>
+                    <p>Have a question or want to get in touch? Reach out to us below!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 p-0 pt-4 p-4 m-auto">
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Your Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Footer Section-->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Contact Us</h3>
+                <p>123 Main Street, Cityville, State, 12345</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: info@albamotors.com</p>
+            </div>
+            <div class="col-md-4">
+                <h3>Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h3>Follow Us</h3>
+                <p>Stay connected on social media for updates and news</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom text-center">
+        <p>&copy; 2023 Alba Motors. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+
+<!--Add JavaScript bundle (including Popper for positioning dropdowns, poppers, and tooltips-->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
