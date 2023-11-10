@@ -1,5 +1,7 @@
+
 .navbar .navbar-nav .nav-item{
   padding: 15px;
+
 }
 .navbar .navbar-nav .nav-but{
   padding: 10px;
@@ -9,6 +11,7 @@
 }
 body{
   background: darkgoldenrod;
+  scroll-behavior: smooth;
 }
 .section-padding{
   padding: 100px 0;
@@ -84,3 +87,7 @@ body{
   }
 }
 
+footer{
+  background-color: coral;
+  text-align: center;
+}
